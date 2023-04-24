@@ -640,6 +640,7 @@ swiper-container:not(.swiper-watch-progress) .swiper-lazy-preloader,
   z-index: 3;
   min-height: 100%;
   width: 100vw;
+  background: #000;
 }
 
 .header.active .header-logo {
