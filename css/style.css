@@ -4922,11 +4922,7 @@ body main {
   }
 
   .no-webp .header.active{
-    background: url("../img/gradients/header.png") right center/cover no-repeat; }
-
-  .header.active {
-    background-color: #000;
-  }
+    background: #000 url("../img/gradients/header.png") right center/cover no-repeat; }
 
   .section1 .sec1-gradient {
     z-index: 1;
@@ -6108,7 +6104,7 @@ body main {
 
 @media (max-width: 992px){
 
-  .webp .header.active{ background: url(../img/gradients/header.webp) right center/cover no-repeat; }
+  .webp .header.active{ background: #000 url(../img/gradients/header.webp) right center/cover no-repeat; }
 }
 
 @media (max-width: 992px){
