@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="files/swiper.min.css?_v=20230424163914">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230424163914">
+    <link rel="stylesheet" href="files/swiper.min.css?_v=20230426104837">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230426104837">
     <title>pricing</title>
 </head>
 
@@ -33,12 +33,12 @@
             </ul>
             <div class="menu-icon"><span></span></div>
         </nav>
-        <button class="sign-in icon-arrow-right">sign in</button>
+        <button class="sign-in icon-arrow-right _sign">sign in</button>
     </div>
 </header>
     <main>
         <section class="section-prices">
-            <picture><source srcset="img/gradients/header.webp" type="image/webp"><img src="img/gradients/header.png" alt="gradient" class="price-gradient"></picture>
+            <img src="img/gradients/header.svg" alt="gradient" class="price-gradient">
             <div class="prices-container">
                 <h1 class="prices-title">Prices</h1>
                 <div class="block-demo">
@@ -67,7 +67,7 @@
                     <picture><source srcset="img/border-top.webp" type="image/webp"><img src="img/border-top.png" alt="border-top" class="_border-top"></picture>
                     <h2 class="trial-title _price-title">trial period</h2>
                     <div class="trial-text">When adding an API key from a real exchange, a 7-day trial period starts. Upon completion, you must have a paid subscription or continue working at a free rate.</div>
-                    <buttton class="trial-button _pricing-btn"><span class="icon-arrow-up">Try Capico free</span></buttton>
+                    <button class="trial-button _pricing-btn"><span class="icon-arrow-up">Try Capico free</span></button>
                 </div>
             </div>
         </section>
@@ -128,7 +128,7 @@
             </div>
         </section>
         <section class="section-free">
-            <picture><source srcset="img/gradients/benefits.webp" type="image/webp"><img src="img/gradients/benefits.png" alt="gradient" class="free-gradient"></picture>
+            <img src="img/gradients/partners.svg" alt="gradient" class="free-gradient">
             <div class="free-container">
                 <div class="free-head">
                     <picture><source srcset="img/border-top.webp" type="image/webp"><img src="img/border-top.png" alt="border-top"></picture>
@@ -162,10 +162,10 @@
             </div>
         </section>
         <section class="last-section">
-            <picture><source srcset="img/section-last/bg.webp" type="image/webp"><img src="img/section-last/bg.png" alt="background image" class="bg"></picture>
+            <picture><source srcset="img/section-last/bg.webp" type="image/webp"><img src="img/section-last/bg.jpg" alt="background image" class="bg"></picture>
             <div class="last-container">
                 <h2 class="last-title">Try Capico for free per month</h2>
-                <button class="last-button _pricing-btn"><span class="icon-arrow-up">Create an account</span></button>
+                <button class="_newAccount last-button _pricing-btn"><span class="icon-arrow-up">Create an account</span></button>
             </div>
         </section>
     </main>
@@ -210,13 +210,40 @@
                 </ul>
             </div>
             <div class="footer-actions">
-                <button class="sign-btn">Sign in</button>
-                <button class="create">Create an account</button>
+                <button class="sign-btn _sign">Sign in</button>
+                <button class="_newAccount create">Create an account</button>
             </div>
         </div> 
         <div class="footer-copy">© 2022 Capico ltd.</div>
     </div>
 </footer>
-    <script src="js/app.min.js?_v=20230424163914"></script>
+    <div class="sign-modal">
+    <div class="modal-window">
+        <img src="img/section-numbers/border.svg" alt="border">
+        <form action="#" class="sign-form">
+            <label for="formUser">User name</label>
+            <input class="formUser" type="text" name="formUser" required>
+            <label for="formPass">Password</label>
+            <input class="formPass" type="password" name="formPass" required>
+            <button type="submit"><span class="icon-arrow-right">sign in</span></button>
+        </form>
+    </div>
+    <div class="left-bg"><img src="img/gradients/partners.svg" alt="gradient"></div>
+    <div class="right-bg"><img src="img/gradients/header.svg" alt="gradient"></div>
+</div>
+
+<div class="create-modal">
+    <div class="create-window">
+        <form action="#" class="create-form">
+            <input autofocus class="formUser" type="text" name="formUser" required placeholder="Name">
+            <input class="formAge" type="number" name="formAge" required placeholder="Age">
+            <input class="formEmail" type="email" name="formAge" required placeholder="E-mail">
+            <button type="submit"><span class="icon-arrow-right">create account</span></button>
+        </form>
+    </div>
+    <div class="left-bg"><img src="img/gradients/partners.svg" alt="gradient"></div>
+    <div class="right-bg"><img src="img/gradients/header.svg" alt="gradient"></div>
+</div>
+    <script src="js/app.min.js?_v=20230426104837"></script>
 </body>
 </html>

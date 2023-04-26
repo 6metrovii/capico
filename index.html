@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="files/swiper.min.css?_v=20230424163914">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230424163914">
+    <link rel="stylesheet" href="files/swiper.min.css?_v=20230426104837">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230426104837">
     <title>main</title>
 </head>
 
@@ -33,17 +33,17 @@
             </ul>
             <div class="menu-icon"><span></span></div>
         </nav>
-        <button class="sign-in icon-arrow-right">sign in</button>
+        <button class="sign-in icon-arrow-right _sign">sign in</button>
     </div>
 </header>
     <main>
         <section class="section1">
-            <picture><source srcset="img/gradients/header.webp" type="image/webp"><img src="img/gradients/header.png" alt="gradient" class="sec1-gradientm"></picture>
-            <picture><source srcset="img/gradients/benefits.webp" type="image/webp"><img src="img/gradients/benefits.png" alt="gradient" class="sec1-gradient"></picture>
-            <video class="video" autoplay loop preload="auto" src="files/video/bg.mp4"  ></video>
+            <img src="img/gradients/header.svg" alt="gradient" class="sec1-gradientm">
+            <img src="img/gradients/partners.svg" alt="gradient" class="sec1-gradient">
+            <video class="video" autoplay loop preload="auto" src="files/video/bg.mp4"></video>
             <div class="section1-container">
                 <h1 class="section1-title">Crypto trading <br> with bots and smart seals</h1>
-                <button class="section1-sign icon-arrow-right">Sign up now</button>
+                <button class="_newAccount section1-sign icon-arrow-right">Sign up now</button>
                 <div class="section1-text">Trade for free on your <br> favorite exchanges</div>
                 <div class="section1-bottom">
                     <div class="bottom-item"><picture><source srcset="img/first-section/binance.webp" type="image/webp"><img src="img/first-section/binance.png" alt="icon"></picture></div>
@@ -103,7 +103,7 @@
             </div>
         </section>
         <section class="section-benefits">
-            <picture><source srcset="img/gradients/partners.webp" type="image/webp"><img src="img/gradients/partners.png" alt="gradient" class="ben-gradient"></picture>
+            <img src="img/gradients/partners.svg" alt="gradient" class="ben-gradient">
             <div class="benefits-container">
                 <div class="numbers-header _block-header">
                     <picture><source srcset="img/border-top.webp" type="image/webp"><img src="img/border-top.png" alt="icon"></picture>
@@ -214,19 +214,6 @@
                     <a href="#" class="manage-link _manage">Manage positions on </a>
                 </div>
                 <div class="features-body">
-                    <div class="features-titles">
-                        <ul class="features-list">
-                            <li><button class="features-button">Stop Loss and Take Profit</button></li>
-                            <li><button class="features-button">Trailing</button></li>
-                            <li><button class="features-button">Timeout and Candle Stop Loss</button></li>
-                            <li><button class="features-button">Pending orders</button></li>
-                            <li><button class="features-button">Trading on the chart channel bot</button></li>
-                            <li><button class="features-button">Ladder and averaging</button></li>
-                            <li><button class="features-button">Automatic breakeven</button></li>
-                            <li><button class="features-button">Booster</button></li>
-                            <li><button class="features-button">Panic Sell</button></li>
-                        </ul>
-                    </div>
                     <div class="features-slider swiper">
                         <div class="slider-buttons">
                             <button class="_slide-prew icon-arrow-up"></button>
@@ -326,6 +313,19 @@
                                 <a href="#" class="slide-button"><span class="icon-arrow-right">learn more</span> </a>
                             </div>
                         </div>
+                        <div class="features-titles">
+                            <ul class="features-list">
+                                <li><button class="features-button">Stop Loss and Take Profit</button></li>
+                                <li><button class="features-button">Trailing</button></li>
+                                <li><button class="features-button">Timeout and Candle Stop Loss</button></li>
+                                <li><button class="features-button">Pending orders</button></li>
+                                <li><button class="features-button">Trading on the chart channel bot</button></li>
+                                <li><button class="features-button">Ladder and averaging</button></li>
+                                <li><button class="features-button">Automatic breakeven</button></li>
+                                <li><button class="features-button">Booster</button></li>
+                                <li><button class="features-button">Panic Sell</button></li>
+                            </ul>
+                        </div>
                         <div class="_slider-dots"></div>
                     </div>
                 </div>
@@ -341,7 +341,7 @@
                 </div>
                 <h2 class="trade-title">Trade anywhere</h2>
                 <div class="trade-text">The service is fully adapted to work through a browser on your smartphone or tablet</div>
-                <button class="trade-button _create-button"><span class="icon-arrow-up">Create an account</span></button>
+                <button class="_newAccount trade-button _create-button"><span class="icon-arrow-up">Create an account</span></button>
             </div>
         </section>
         <section class="section-security">
@@ -413,7 +413,7 @@
             <a href="#" class="free-link">Free use per month</a>
             <div class="last-container">
                 <h2 class="last-title">Try Capico for free per month</h2>
-                <button class="last-button _create-button"><span class="icon-arrow-up">Create an account</span></button>
+                <button class="_newAccount last-button _create-button"><span class="icon-arrow-up">Create an account</span></button>
             </div>
         </section>
     </main>
@@ -458,13 +458,40 @@
                 </ul>
             </div>
             <div class="footer-actions">
-                <button class="sign-btn">Sign in</button>
-                <button class="create">Create an account</button>
+                <button class="sign-btn _sign">Sign in</button>
+                <button class="_newAccount create">Create an account</button>
             </div>
         </div> 
         <div class="footer-copy">© 2022 Capico ltd.</div>
     </div>
 </footer>
-    <script src="js/app.min.js?_v=20230424163914"></script>
+    <div class="sign-modal">
+    <div class="modal-window">
+        <img src="img/section-numbers/border.svg" alt="border">
+        <form action="#" class="sign-form">
+            <label for="formUser">User name</label>
+            <input class="formUser" type="text" name="formUser" required>
+            <label for="formPass">Password</label>
+            <input class="formPass" type="password" name="formPass" required>
+            <button type="submit"><span class="icon-arrow-right">sign in</span></button>
+        </form>
+    </div>
+    <div class="left-bg"><img src="img/gradients/partners.svg" alt="gradient"></div>
+    <div class="right-bg"><img src="img/gradients/header.svg" alt="gradient"></div>
+</div>
+
+<div class="create-modal">
+    <div class="create-window">
+        <form action="#" class="create-form">
+            <input autofocus class="formUser" type="text" name="formUser" required placeholder="Name">
+            <input class="formAge" type="number" name="formAge" required placeholder="Age">
+            <input class="formEmail" type="email" name="formAge" required placeholder="E-mail">
+            <button type="submit"><span class="icon-arrow-right">create account</span></button>
+        </form>
+    </div>
+    <div class="left-bg"><img src="img/gradients/partners.svg" alt="gradient"></div>
+    <div class="right-bg"><img src="img/gradients/header.svg" alt="gradient"></div>
+</div>
+    <script src="js/app.min.js?_v=20230426104837"></script>
 </body>
 </html>
